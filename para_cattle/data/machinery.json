@@ -1,0 +1,62 @@
+{
+  "_comment": "User-defined equipment envelope. Every plan is generated and then snapped to these numbers, so the same site produces different designs for a smallholder with a 12 m boom and an operation running 40 m controlled traffic.",
+
+  "profiles": {
+    "para_cattle_ranch": {
+      "label": "Pará cattle ranch, fenced paddocks",
+      "planter_width_m": 6.0,
+      "sprayer_boom_m": 10.0,
+      "harvester_header_m": 6.0,
+      "controlled_traffic_module_m": 10.0,
+      "turning_radius_m": 8.0,
+      "min_headland_m": 10.0,
+      "max_working_slope_deg": 20.0,
+      "min_workable_ha": 5.0,
+      "min_corridor_width_m": 20.0,
+      "planting_equipment": ["direct seeding (muvuca)", "manual seedling planting", "fence and exclude cattle"],
+      "notes": "Pasture is grazed and fenced, not driven every season, so strip widths follow a fence line and a small tractor, and a leftover paddock under min_workable_ha is still usable for grazing. The machinery penalty in generative.ARCHETYPES is scaled down to match."
+    },
+    "large_soy_ctf": {
+      "label": "Large soy operation, controlled traffic",
+      "planter_width_m": 18.0,
+      "sprayer_boom_m": 36.0,
+      "harvester_header_m": 12.2,
+      "controlled_traffic_module_m": 36.0,
+      "turning_radius_m": 12.0,
+      "min_headland_m": 24.0,
+      "max_working_slope_deg": 12.0,
+      "min_workable_ha": 12.0,
+      "min_corridor_width_m": 30.0,
+      "planting_equipment": ["mechanised seedling planter", "direct seeding (muvuca)"],
+      "notes": "Field remnants below min_workable_ha are not worth entering; the plan is charged for creating them."
+    },
+    "medium_mixed": {
+      "label": "Medium mixed crop-livestock",
+      "planter_width_m": 9.0,
+      "sprayer_boom_m": 18.0,
+      "harvester_header_m": 6.1,
+      "controlled_traffic_module_m": 18.0,
+      "turning_radius_m": 8.0,
+      "min_headland_m": 12.0,
+      "max_working_slope_deg": 15.0,
+      "min_workable_ha": 4.0,
+      "min_corridor_width_m": 20.0,
+      "planting_equipment": ["tractor-drawn seedling planter", "direct seeding"]
+    },
+    "smallholder": {
+      "label": "Smallholder / family farm",
+      "planter_width_m": 3.0,
+      "sprayer_boom_m": 6.0,
+      "harvester_header_m": 3.0,
+      "controlled_traffic_module_m": 6.0,
+      "turning_radius_m": 4.0,
+      "min_headland_m": 6.0,
+      "max_working_slope_deg": 20.0,
+      "min_workable_ha": 0.5,
+      "min_corridor_width_m": 10.0,
+      "planting_equipment": ["manual planting", "animal traction"]
+    }
+  },
+
+  "default_profile": "para_cattle_ranch"
+}

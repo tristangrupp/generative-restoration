@@ -16,3 +16,7 @@ data/context/PILOT_*
 outputs/PILOT_sorriso/
 
 *.zip
+
+# Pará cattle module: same rules as the core project
+para_cattle/data/context/*.npz
+para_cattle/outputs/**/*_labels.npy

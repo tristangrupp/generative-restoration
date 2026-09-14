@@ -1,0 +1,37 @@
+{
+  "property_ha": 2347.6,
+  "rl_pct": 0.796,
+  "rl_required_ha": 1868.7,
+  "rl_existing_native_ha": 977.7,
+  "rl_of_which_in_app_ha": 125.7,
+  "rl_deficit_ha": 891.0,
+  "art67_small_property": false,
+  "art15_app_counted_toward_rl": true,
+  "recomposition_pace": "at least 1/10 of the deficit every 2 years (Art. 66 par. 2)",
+  "max_exotic_intercrop_share": 0.5,
+  "site_id": "para_novo_progresso",
+  "cod_imovel": "PA-1500602-40F7D372B8814E0E8ADBE2E9A386CFB4",
+  "municipio": "Altamira",
+  "mod_fiscal": 31.3126,
+  "biome": "Amazonia",
+  "app_full_ha": 305.6,
+  "app_obligation_ha": 286.3,
+  "app_deficit_ha": 160.6,
+  "app_relief_from_art61a_ha": 19.3,
+  "by_article": {
+    "art4_I_watercourse": 293.3,
+    "art4_II_lake": 0.0,
+    "art4_IV_spring": 36.6,
+    "art4_V_slope_gt_45deg": 0.0,
+    "art4_VIII_plateau_edge_PROXY": 0.0,
+    "art4_IX_hilltop_PROXY": 0.0,
+    "art4_XI_vereda_PROXY": 0.0
+  },
+  "total_restoration_obligation_ha": 1051.6,
+  "caveats": [
+    "Reserva Legal share is taken from the site's biome window, not from an official IBGE biome overlay of the parcel.",
+    "Art. 4 VIII / IX / XI masks are terrain and MapBiomas proxies; see forest_code.py docstrings.",
+    "Consolidation is inferred from MapBiomas 2008 land use, not from the property's CAR declaration of area consolidada.",
+    "APP counted toward RL under Art. 15 requires the owner to have requested it in CAR; assumed granted here."
+  ]
+}

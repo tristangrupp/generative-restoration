@@ -1,0 +1,98 @@
+[
+  {
+    "site_id": "para_paragominas",
+    "label": "Paragominas / Nordeste Paraense",
+    "biome": "Amazonia",
+    "rl_pct": 0.8,
+    "note": "Pará cattle property picked by Restoration Explorer · Pará: 2753 ha low-vigor pasture, APP deficit 467 ha, RL deficit 2948 ha (64 ha cleared after 2008).",
+    "cod_imovel": "PA-1505502-2B67B00216B54C7F82FA15ED6C7815BE",
+    "car_id": 295908,
+    "municipio": "Paragominas",
+    "mod_fiscal": 77.3034,
+    "declared_area_ha": 4244.928822986447,
+    "geom_area_ha": 4244.9,
+    "cropped_ha": 2849.8,
+    "cropped_share": 0.671,
+    "n_fields": 114,
+    "bbox_wgs84": [
+      -48.24195,
+      -3.80167,
+      -48.18209,
+      -3.73388
+    ],
+    "gpkg": "data/sites/para_paragominas.gpkg",
+    "explorer_ledger": {
+      "past24_ha": 3716.1,
+      "past_low_ha": 2752.6,
+      "app_deficit_ha": 467.4,
+      "rl_deficit_ha": 2948.0,
+      "rl_onfarm_ha": 64.4,
+      "rl_compensable_ha": 2883.6,
+      "status": "must_restore"
+    }
+  },
+  {
+    "site_id": "para_sao_felix_xingu",
+    "label": "São Félix do Xingu / Xingu",
+    "biome": "Amazonia",
+    "rl_pct": 0.8,
+    "note": "Pará cattle property picked by Restoration Explorer · Pará: 1266 ha low-vigor pasture, APP deficit 209 ha, RL deficit 1566 ha (42 ha cleared after 2008).",
+    "cod_imovel": "PA-1501253-C83C29D3BB4244A984B7F71E3AC720CC",
+    "car_id": 119828,
+    "municipio": "Bannach",
+    "mod_fiscal": 32.2732,
+    "declared_area_ha": 2422.397872979001,
+    "geom_area_ha": 2422.4,
+    "cropped_ha": 1747.8,
+    "cropped_share": 0.722,
+    "n_fields": 26,
+    "bbox_wgs84": [
+      -50.76805,
+      -7.51548,
+      -50.71985,
+      -7.4499
+    ],
+    "gpkg": "data/sites/para_sao_felix_xingu.gpkg",
+    "explorer_ledger": {
+      "past24_ha": 2038.8,
+      "past_low_ha": 1265.9,
+      "app_deficit_ha": 208.9,
+      "rl_deficit_ha": 1566.1,
+      "rl_onfarm_ha": 41.6,
+      "rl_compensable_ha": 1524.5,
+      "status": "must_restore"
+    }
+  },
+  {
+    "site_id": "para_novo_progresso",
+    "label": "Novo Progresso / BR-163",
+    "biome": "Amazonia",
+    "rl_pct": 0.796,
+    "note": "Pará cattle property picked by Restoration Explorer · Pará: 688 ha low-vigor pasture, APP deficit 143 ha, RL deficit 893 ha (27 ha cleared after 2008).",
+    "cod_imovel": "PA-1500602-40F7D372B8814E0E8ADBE2E9A386CFB4",
+    "car_id": 75967,
+    "municipio": "Altamira",
+    "mod_fiscal": 31.3126,
+    "declared_area_ha": 2347.319823631055,
+    "geom_area_ha": 2347.3,
+    "cropped_ha": 1101.7,
+    "cropped_share": 0.469,
+    "n_fields": 22,
+    "bbox_wgs84": [
+      -54.95376,
+      -8.43009,
+      -54.90936,
+      -8.36703
+    ],
+    "gpkg": "data/sites/para_novo_progresso.gpkg",
+    "explorer_ledger": {
+      "past24_ha": 1353.6,
+      "past_low_ha": 687.7,
+      "app_deficit_ha": 143.3,
+      "rl_deficit_ha": 893.5,
+      "rl_onfarm_ha": 26.9,
+      "rl_compensable_ha": 866.6,
+      "status": "must_restore"
+    }
+  }
+]

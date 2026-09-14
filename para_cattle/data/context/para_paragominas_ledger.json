@@ -1,0 +1,37 @@
+{
+  "property_ha": 4266.9,
+  "rl_pct": 0.8,
+  "rl_required_ha": 3413.5,
+  "rl_existing_native_ha": 451.6,
+  "rl_of_which_in_app_ha": 66.2,
+  "rl_deficit_ha": 2962.0,
+  "art67_small_property": false,
+  "art15_app_counted_toward_rl": true,
+  "recomposition_pace": "at least 1/10 of the deficit every 2 years (Art. 66 par. 2)",
+  "max_exotic_intercrop_share": 0.5,
+  "site_id": "para_paragominas",
+  "cod_imovel": "PA-1505502-2B67B00216B54C7F82FA15ED6C7815BE",
+  "municipio": "Paragominas",
+  "mod_fiscal": 77.3034,
+  "biome": "Amazonia",
+  "app_full_ha": 820.7,
+  "app_obligation_ha": 781.0,
+  "app_deficit_ha": 714.7,
+  "app_relief_from_art61a_ha": 39.7,
+  "by_article": {
+    "art4_I_watercourse": 799.9,
+    "art4_II_lake": 0.0,
+    "art4_IV_spring": 60.2,
+    "art4_V_slope_gt_45deg": 0.0,
+    "art4_VIII_plateau_edge_PROXY": 0.0,
+    "art4_IX_hilltop_PROXY": 0.0,
+    "art4_XI_vereda_PROXY": 0.0
+  },
+  "total_restoration_obligation_ha": 3676.7,
+  "caveats": [
+    "Reserva Legal share is taken from the site's biome window, not from an official IBGE biome overlay of the parcel.",
+    "Art. 4 VIII / IX / XI masks are terrain and MapBiomas proxies; see forest_code.py docstrings.",
+    "Consolidation is inferred from MapBiomas 2008 land use, not from the property's CAR declaration of area consolidada.",
+    "APP counted toward RL under Art. 15 requires the owner to have requested it in CAR; assumed granted here."
+  ]
+}

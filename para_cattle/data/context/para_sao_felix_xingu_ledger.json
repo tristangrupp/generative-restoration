@@ -1,0 +1,37 @@
+{
+  "property_ha": 2426.3,
+  "rl_pct": 0.8,
+  "rl_required_ha": 1941.0,
+  "rl_existing_native_ha": 371.8,
+  "rl_of_which_in_app_ha": 43.5,
+  "rl_deficit_ha": 1569.2,
+  "art67_small_property": false,
+  "art15_app_counted_toward_rl": true,
+  "recomposition_pace": "at least 1/10 of the deficit every 2 years (Art. 66 par. 2)",
+  "max_exotic_intercrop_share": 0.5,
+  "site_id": "para_sao_felix_xingu",
+  "cod_imovel": "PA-1501253-C83C29D3BB4244A984B7F71E3AC720CC",
+  "municipio": "Bannach",
+  "mod_fiscal": 32.2732,
+  "biome": "Amazonia",
+  "app_full_ha": 238.0,
+  "app_obligation_ha": 228.9,
+  "app_deficit_ha": 185.4,
+  "app_relief_from_art61a_ha": 9.1,
+  "by_article": {
+    "art4_I_watercourse": 226.1,
+    "art4_II_lake": 0.0,
+    "art4_IV_spring": 32.8,
+    "art4_V_slope_gt_45deg": 0.0,
+    "art4_VIII_plateau_edge_PROXY": 0.0,
+    "art4_IX_hilltop_PROXY": 0.0,
+    "art4_XI_vereda_PROXY": 0.0
+  },
+  "total_restoration_obligation_ha": 1754.6,
+  "caveats": [
+    "Reserva Legal share is taken from the site's biome window, not from an official IBGE biome overlay of the parcel.",
+    "Art. 4 VIII / IX / XI masks are terrain and MapBiomas proxies; see forest_code.py docstrings.",
+    "Consolidation is inferred from MapBiomas 2008 land use, not from the property's CAR declaration of area consolidada.",
+    "APP counted toward RL under Art. 15 requires the owner to have requested it in CAR; assumed granted here."
+  ]
+}

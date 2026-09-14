@@ -1,0 +1,41 @@
+{
+  "_comment": "Design morphology. This is the knob that decides whether a plan reads as contour agriculture or as consolidated blocks. It does not change what is legal - the Forest Code obligation is identical either way - only the shape the compliance takes.",
+
+  "linearity": {
+    "_meaning": "0.0 = grow compact bodies outward from existing vegetation. 1.0 = lay strips along the land's contours, stream margins and field edges. Values in between mix the two, which is usually what a real farm wants: blocks where there is already forest to build onto, lines across the open slopes.",
+    "value": 0.55,
+    "per_archetype": {
+      "compliance_minimum": 0.35,
+      "water_first": 0.75,
+      "corridor_network": 0.30,
+      "productive_mosaic": 0.80
+    },
+    "_per_archetype_note": "corridor_network stays blocky on purpose - a habitat corridor wants width, not a hedgerow. productive_mosaic goes linear because alley cropping and windbreaks are what make agroforestry driveable."
+  },
+
+  "strips": {
+    "_meaning": "Geometry of a contour strip. Widths are snapped up to a whole number of machine passes using the active machinery profile, so a strip never wastes half a boom.",
+    "contour_interval_m": 12.0,
+    "_contour_interval_note": "Vertical spacing between candidate contour lines. Tighter interval = more, closer strips. 10-15 m suits the gentle chapada slopes of Mato Grosso; drop to 5 m on steeper ground.",
+    "target_width_passes": 2,
+    "_target_width_note": "Strip width as a multiple of the implement width. 2 passes of a 36 m boom = 72 m, wide enough to count as restoration rather than a hedgerow. Set to 1 for single-pass strips.",
+    "min_strip_length_m": 400.0,
+    "_min_length_note": "Shorter strips are not worth the turns. Raise this for bigger machinery.",
+    "riparian_band_width_m": 60.0,
+    "field_edge_band_width_m": 20.0,
+    "_resolution_note": "The analysis grid is 10 m, so these widths are real: a 20 m field-edge band is two cells and holds its shape, where on the old 60 m grid anything under ~120 m rounded away. Widths are still snapped up to whole implement passes, so the geometry stays drivable."
+  },
+
+  "blobs": {
+    "_meaning": "Geometry of the compact mode.",
+    "grow_from_existing_vegetation": true,
+    "_grow_note": "When true, blob moves seed preferentially on blocks already touching native vegetation, so new area lands against old rather than starting isolated patches.",
+    "max_radius_blocks": 10
+  },
+
+  "drivability": {
+    "_meaning": "Enforced when the design lines are built, not priced afterwards. A contour that doubles back tighter than the machine can turn is split, and the offcuts below min_strip_length_m are discarded. Every strip the sampler can propose is therefore already drivable.",
+    "use_machinery_turning_radius": true,
+    "turning_radius_safety_factor": 1.5
+  }
+}
