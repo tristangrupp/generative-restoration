@@ -1,0 +1,34 @@
+[
+  {
+    "linearity": 0.0,
+    "restored_ha": 295.2,
+    "contour_alignment": 0.824,
+    "aggregation": 0.745,
+    "patches": 97,
+    "energy": 360.5
+  },
+  {
+    "linearity": 0.35,
+    "restored_ha": 239.4,
+    "contour_alignment": 0.825,
+    "aggregation": 0.744,
+    "patches": 95,
+    "energy": 319.3
+  },
+  {
+    "linearity": 0.7,
+    "restored_ha": 220.0,
+    "contour_alignment": 0.842,
+    "aggregation": 0.744,
+    "patches": 96,
+    "energy": 228.4
+  },
+  {
+    "linearity": 1.0,
+    "restored_ha": 219.2,
+    "contour_alignment": 0.836,
+    "aggregation": 0.743,
+    "patches": 100,
+    "energy": 164.2
+  }
+]

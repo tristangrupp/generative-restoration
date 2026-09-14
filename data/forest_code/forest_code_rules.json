@@ -1,0 +1,126 @@
+{
+  "source": {
+    "primary_law": "Lei no 12.651, de 25 de maio de 2012 (Codigo Florestal) - texto compilado",
+    "consolidated_through": "Lei no 15.042, de 2024",
+    "downloaded": "2026-07-27",
+    "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12651.htm",
+    "supporting": [
+      "Lei no 12.727/2012",
+      "Decreto no 7.830/2012 (CAR, PRA, SICAR)",
+      "Decreto no 8.235/2014 (PRA normas gerais)",
+      "Lei no 14.285/2021"
+    ],
+    "note": "Machine-readable distillation. Legal text of record is the .txt/.html in this folder. State-level (SEMA-MT) rules and municipal fiscal-module sizes override/refine these defaults."
+  },
+
+  "app_full": {
+    "_article": "Art. 4",
+    "_meaning": "Full-width APP required where there is NO consolidated rural occupation as of 2008-07-22.",
+    "watercourse_buffer_m": [
+      {"width_lt_m": 10,   "buffer_m": 30,  "cite": "Art.4 I a"},
+      {"width_lt_m": 50,   "buffer_m": 50,  "cite": "Art.4 I b"},
+      {"width_lt_m": 200,  "buffer_m": 100, "cite": "Art.4 I c"},
+      {"width_lt_m": 600,  "buffer_m": 200, "cite": "Art.4 I d"},
+      {"width_lt_m": null, "buffer_m": 500, "cite": "Art.4 I e"}
+    ],
+    "watercourse_scope": "perennial and intermittent; ephemeral excluded (Lei 12.727/2012)",
+    "measured_from": "borda da calha do leito regular",
+    "natural_lake_buffer_m": {"rural_gt_20ha": 100, "rural_le_20ha": 50, "urban": 30, "cite": "Art.4 II"},
+    "artificial_reservoir": {"rule": "width set by the environmental licence; none required if not from damming a natural watercourse", "cite": "Art.4 III, par.1"},
+    "spring_radius_m": {"value": 50, "scope": "nascentes e olhos d'agua perenes", "cite": "Art.4 IV"},
+    "steep_slope_deg": {"gt_deg": 45, "equivalent_pct": 100, "cite": "Art.4 V"},
+    "plateau_edge_m": {"buffer_m": 100, "scope": "bordas de tabuleiros ou chapadas, ate a linha de ruptura do relevo", "cite": "Art.4 VIII"},
+    "hilltop": {"min_height_m": 100, "min_mean_slope_deg": 25, "from_contour_fraction_of_height": 0.6667, "cite": "Art.4 IX"},
+    "altitude_m": {"gt_m": 1800, "cite": "Art.4 X"},
+    "vereda_buffer_m": {"value": 50, "measured_from": "limite do espaco permanentemente brejoso e encharcado", "cite": "Art.4 XI"},
+    "restinga_mangue": {"rule": "entire extent", "cite": "Art.4 VI, VII"}
+  },
+
+  "app_consolidated": {
+    "_article": "Art. 61-A",
+    "_meaning": "Reduced recomposition ('escadinha') for areas under agrosilvopastoral use consolidated before 2008-07-22. Continuity of the activity is authorised; only the strip below must be replanted.",
+    "cutoff_date": "2008-07-22",
+    "watercourse_by_fiscal_modules": [
+      {"mf_le": 1,    "recompose_m": 5,  "cite": "Art.61-A par.1"},
+      {"mf_le": 2,    "recompose_m": 8,  "cite": "Art.61-A par.2"},
+      {"mf_le": 4,    "recompose_m": 15, "cite": "Art.61-A par.3"},
+      {"mf_le": 10,   "recompose_m": 20, "condition": "only where watercourse width <= 10 m", "cite": "Art.61-A par.4 I"},
+      {"mf_le": null, "recompose_m": "half_of_watercourse_width", "min_m": 30, "max_m": 100, "cite": "Art.61-A par.4 II"}
+    ],
+    "spring_radius_by_fiscal_modules": [
+      {"mf_le": 1,    "recompose_m": 5,  "cite": "Art.61-A par.5 I"},
+      {"mf_le": 2,    "recompose_m": 8,  "cite": "Art.61-A par.5 II"},
+      {"mf_le": null, "recompose_m": 15, "cite": "Art.61-A par.5 III"}
+    ],
+    "lake_by_fiscal_modules": [
+      {"mf_le": 1,    "recompose_m": 5,  "cite": "Art.61-A par.6 I"},
+      {"mf_le": 2,    "recompose_m": 8,  "cite": "Art.61-A par.6 II"},
+      {"mf_le": 4,    "recompose_m": 15, "cite": "Art.61-A par.6 III"},
+      {"mf_le": null, "recompose_m": 30, "cite": "Art.61-A par.6 IV"}
+    ]
+  },
+
+  "reserva_legal": {
+    "_article": "Art. 12",
+    "_meaning": "Minimum share of the RURAL PROPERTY (imovel) that must carry native vegetation, on top of APP.",
+    "amazonia_legal": {
+      "forest": 0.80,
+      "cerrado": 0.35,
+      "campos_gerais": 0.20,
+      "cite": "Art.12 I a-c",
+      "note": "Where a property spans more than one of these, each index applies to its own portion (Art.12 par.2)."
+    },
+    "outside_amazonia_legal": {"all": 0.20, "cite": "Art.12 II"},
+    "app_may_count_toward_rl": {
+      "allowed": true,
+      "conditions": [
+        "no new native-vegetation clearing after 2008-07-22",
+        "APP is conserved or under recomposition",
+        "owner has requested inclusion in CAR"
+      ],
+      "cite": "Art.15"
+    },
+    "recomposition_options": {
+      "cite": "Art.66",
+      "options": ["recompor", "permitir regeneracao natural", "compensar"],
+      "recomposition_schedule": "at least 1/10 of the total area every 2 years (Art.66 par.2)",
+      "intercropping_exotics_allowed": {
+        "allowed": true,
+        "max_share_of_recomposed_area": 0.50,
+        "cite": "Art.66 par.3"
+      },
+      "compensation_must_be": "same biome, and if outside the state, in areas identified as priority by the Uniao or the state (Art.66 par.6)"
+    },
+    "small_property_le_4mf": {
+      "cite": "Art.67",
+      "rule": "For properties up to 4 fiscal modules, the Reserva Legal is the native vegetation existing on 2008-07-22; no recomposition of RL is required beyond that."
+    }
+  },
+
+  "planning_defaults": {
+    "mato_grosso": {
+      "in_amazonia_legal": true,
+      "biome_to_rl_pct": {"Amazonia": 0.80, "Cerrado": 0.35, "Pantanal": 0.35},
+      "_pantanal_note": "MT Pantanal is inside Amazonia Legal; treated as non-forest formation -> 0.35 unless classified as campos gerais (0.20). Flagged for legal review per municipality.",
+      "fiscal_module_ha_range": [30, 100],
+      "fiscal_module_ha_default": 100,
+      "_mf_note": "Fiscal module in MT ranges 30-100 ha by municipality (INCRA). Override per site from the INCRA table before any real filing."
+    }
+  },
+
+  "mapbiomas_class_roles": {
+    "_collection": "MapBiomas Brazil coverage (brazil_coverage_YYYY.tif)",
+    "native_vegetation": [1, 3, 4, 5, 6, 49, 10, 11, 12, 32, 29, 50, 13],
+    "forest_formation": [3],
+    "savanna_formation": [4],
+    "wetland": [11],
+    "grassland": [12],
+    "water": [33],
+    "agriculture": [14, 15, 18, 19, 39, 20, 40, 62, 41, 36, 46, 47, 35, 48, 9, 21],
+    "pasture": [15],
+    "forest_plantation": [9],
+    "mosaic_uses": [21],
+    "non_vegetated": [22, 23, 24, 30, 25],
+    "note": "Class 9 (silvicultura) is planted forest, NOT native vegetation, and does not satisfy RL."
+  }
+}

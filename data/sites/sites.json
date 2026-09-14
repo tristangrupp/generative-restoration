@@ -1,0 +1,68 @@
+[
+  {
+    "site_id": "sorriso_amazonia",
+    "label": "Sorriso / Lucas do Rio Verde",
+    "biome": "Amazonia",
+    "rl_pct": 0.8,
+    "note": "Soy frontier on the Amazon-biome side of MT. RL 80% -> large deficits.",
+    "cod_imovel": "MT-5107925-3BAF91A5F735426F9224DCFAF1BF3913",
+    "municipio": "Sorriso",
+    "mod_fiscal": 57.57,
+    "declared_area_ha": 5181.3185,
+    "geom_area_ha": 5186.9,
+    "cropped_ha": 1664.3,
+    "cropped_share": 0.321,
+    "n_fields": 9,
+    "bbox_wgs84": [
+      -56.11614,
+      -12.64537,
+      -55.90008,
+      -12.59235
+    ],
+    "gpkg": "data/sites/sorriso_amazonia.gpkg"
+  },
+  {
+    "site_id": "querencia_transicao",
+    "label": "Querencia / Xingu headwaters",
+    "biome": "Amazonia",
+    "rl_pct": 0.8,
+    "note": "Xingu headwater catchments; dense small-stream network, riparian APP heavy.",
+    "cod_imovel": "MT-5107065-0ADD539B82204ADD923C937474D48855",
+    "municipio": "Querencia",
+    "mod_fiscal": 62.33,
+    "declared_area_ha": 4986.2853,
+    "geom_area_ha": 4988.4,
+    "cropped_ha": 3165.6,
+    "cropped_share": 0.635,
+    "n_fields": 23,
+    "bbox_wgs84": [
+      -52.55907,
+      -12.54824,
+      -52.50176,
+      -12.42303
+    ],
+    "gpkg": "data/sites/querencia_transicao.gpkg"
+  },
+  {
+    "site_id": "primavera_cerrado",
+    "label": "Primavera do Leste / Campo Verde",
+    "biome": "Cerrado",
+    "rl_pct": 0.35,
+    "note": "Chapada Cerrado cropland. RL 35%, plateau-edge and vereda APPs matter.",
+    "cod_imovel": "MT-5107008-68B11B47FD234311B4ACF75DADE4C752",
+    "municipio": "Poxoreu",
+    "mod_fiscal": 55.33,
+    "declared_area_ha": 3319.6743,
+    "geom_area_ha": 3315.2,
+    "cropped_ha": 987.0,
+    "cropped_share": 0.298,
+    "n_fields": 50,
+    "bbox_wgs84": [
+      -54.27301,
+      -15.6162,
+      -54.19776,
+      -15.53755
+    ],
+    "gpkg": "data/sites/primavera_cerrado.gpkg"
+  }
+]

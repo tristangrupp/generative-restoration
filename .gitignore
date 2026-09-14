@@ -1,0 +1,18 @@
+__pycache__/
+*.pyc
+
+# Context rasters, 27-46 MB each. Rebuild with s02_build_context.py and
+# s03_constraints.py (tens of minutes a site, most of it the DEM fetch).
+data/context/*.npz
+
+# Per-scenario label arrays. They only render alongside the context rasters above,
+# and the GeoPackage next to each one carries the same plan as polygons.
+outputs/**/*_labels.npy
+
+# Pilot run on a provisional holding, from before the CAR extract finished.
+data/sites/PILOT_*
+data/sites/sites_pilot.json
+data/context/PILOT_*
+outputs/PILOT_sorriso/
+
+*.zip

@@ -1,0 +1,37 @@
+{
+  "property_ha": 4988.4,
+  "rl_pct": 0.8,
+  "rl_required_ha": 3990.7,
+  "rl_existing_native_ha": 1473.6,
+  "rl_of_which_in_app_ha": 207.8,
+  "rl_deficit_ha": 2517.1,
+  "art67_small_property": false,
+  "art15_app_counted_toward_rl": true,
+  "recomposition_pace": "at least 1/10 of the deficit every 2 years (Art. 66 par. 2)",
+  "max_exotic_intercrop_share": 0.5,
+  "site_id": "querencia_transicao",
+  "cod_imovel": "MT-5107065-0ADD539B82204ADD923C937474D48855",
+  "municipio": "Querencia",
+  "mod_fiscal": 62.33,
+  "biome": "Amazonia",
+  "app_full_ha": 810.3,
+  "app_obligation_ha": 783.9,
+  "app_deficit_ha": 576.1,
+  "app_relief_from_art61a_ha": 26.4,
+  "by_article": {
+    "art4_I_watercourse": 784.5,
+    "art4_II_lake": 0.0,
+    "art4_IV_spring": 75.0,
+    "art4_V_slope_gt_45deg": 0.0,
+    "art4_VIII_plateau_edge_PROXY": 0.0,
+    "art4_IX_hilltop_PROXY": 0.0,
+    "art4_XI_vereda_PROXY": 0.0
+  },
+  "total_restoration_obligation_ha": 3093.2,
+  "caveats": [
+    "Reserva Legal share is taken from the site's biome window, not from an official IBGE biome overlay of the parcel.",
+    "Art. 4 VIII / IX / XI masks are terrain and MapBiomas proxies; see forest_code.py docstrings.",
+    "Consolidation is inferred from MapBiomas 2008 land use, not from the property's CAR declaration of area consolidada.",
+    "APP counted toward RL under Art. 15 requires the owner to have requested it in CAR; assumed granted here."
+  ]
+}
