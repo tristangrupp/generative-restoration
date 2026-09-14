@@ -59,10 +59,19 @@ def main(out_dir: str | None, only=None) -> None:
         if only and sid not in only:
             continue
         summary_path = OUT / sid / "scenarios.json"
-        if not summary_path.exists():
-            print(f"{sid}: no plans yet, skipped")
-            continue
-        summary = json.loads(summary_path.read_text(encoding="utf-8"))
+        if summary_path.exists():
+            summary = json.loads(summary_path.read_text(encoding="utf-8"))
+        else:
+            # The core writes scenarios.json only after a site's last plan. Build the
+            # same record from the per-plan metrics so finished plans publish early.
+            done = sorted((OUT / sid).glob("*_metrics.json")) if (OUT / sid).exists() else []
+            if not done:
+                print(f"{sid}: no plans yet, skipped")
+                continue
+            ledger = json.loads((CONTEXT_DIR / f"{sid}_ledger.json").read_text(encoding="utf-8"))
+            summary = {"site": rec, "ledger": ledger,
+                       "machinery": {"label": json.loads(done[0].read_text(encoding="utf-8")).get("machinery_profile", "")},
+                       "scenarios": [json.loads(p.read_text(encoding="utf-8")) for p in done]}
         ctx = np.load(CONTEXT_DIR / f"{sid}_context.npz")
         con = np.load(CONTEXT_DIR / f"{sid}_constraints.npz")
         transform = Affine.from_gdal(*ctx["transform"])
