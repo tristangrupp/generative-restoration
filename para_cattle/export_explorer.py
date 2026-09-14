@@ -36,7 +36,7 @@ def _vectorise(mask, transform, window, layer, min_ha=0.05):
     geoms = [shape(g) for g, v in shapes(sub, mask=sub > 0, transform=t) if v == 1]
     if not geoms:
         return gpd.GeoDataFrame(columns=["layer", "geometry"], geometry="geometry", crs=METRIC_CRS)
-    gdf = gpd.GeoDataFrame({"layer": layer}, geometry=geoms, crs=METRIC_CRS)
+    gdf = gpd.GeoDataFrame({"layer": [layer] * len(geoms)}, geometry=geoms, crs=METRIC_CRS)
     gdf = gdf[gdf.area >= min_ha * 1e4]
     gdf["geometry"] = gdf.simplify(SIMPLIFY_M)
     return gdf
@@ -84,16 +84,19 @@ def main(out_dir: str | None, only=None) -> None:
         prop = gpd.read_file(SITES_DIR / f"{sid}.gpkg", layer="property").to_crs(METRIC_CRS)
         fields = gpd.read_file(SITES_DIR / f"{sid}.gpkg", layer="fields").to_crs(METRIC_CRS)
         soy = cal.soy_suitable_fields(fields)
+        # a GeoPackage keeps `fid` as its row key, so it may come back as the index
+        fid = fields["fid"] if "fid" in fields else fields.index.to_series()
+        empty = gpd.pd.Series([None] * len(fields), index=fields.index)
         fields_out = gpd.GeoDataFrame({
-            "layer": "field",
-            "fid": fields.get("fid"),
-            "area_ha": fields.area / 1e4,
-            "vigor_class": fields.get("vigor_class"),
-            "vigor_low_share": fields.get("vigor_low_share"),
-            "biomass_t_ha": fields.get("biomass_t_ha"),
-            "degradation": fields.get("degradation"),
+            "layer": ["field"] * len(fields),
+            "fid": fid.to_numpy(),
+            "area_ha": (fields.area / 1e4).to_numpy(),
+            "vigor_class": fields.get("vigor_class", empty).to_numpy(),
+            "vigor_low_share": fields.get("vigor_low_share", empty).to_numpy(),
+            "biomass_t_ha": fields.get("biomass_t_ha", empty).to_numpy(),
+            "degradation": fields.get("degradation", empty).to_numpy(),
             "soy_suitable": soy.astype(int),
-        }, geometry=fields.geometry.simplify(SIMPLIFY_M), crs=METRIC_CRS)
+        }, geometry=fields.geometry.simplify(SIMPLIFY_M).to_numpy(), crs=METRIC_CRS)
 
         layers = [
             gpd.GeoDataFrame({"layer": ["property"]}, geometry=[prop.geometry.union_all()], crs=METRIC_CRS),
