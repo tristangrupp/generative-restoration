@@ -1,0 +1,37 @@
+{
+  "property_ha": 5777.4,
+  "rl_pct": 0.8,
+  "rl_required_ha": 4621.9,
+  "rl_existing_native_ha": 1620.0,
+  "rl_of_which_in_app_ha": 425.6,
+  "rl_deficit_ha": 3001.9,
+  "art67_small_property": false,
+  "art15_app_counted_toward_rl": true,
+  "recomposition_pace": "at least 1/10 of the deficit every 2 years (Art. 66 par. 2)",
+  "max_exotic_intercrop_share": 0.5,
+  "site_id": "para_maraba",
+  "cod_imovel": "PA-1504208-C3019D618ECE48698E8A9FBC9D5B2607",
+  "municipio": "Maraba",
+  "mod_fiscal": 82.298,
+  "biome": "Amazonia",
+  "app_full_ha": 653.4,
+  "app_obligation_ha": 641.3,
+  "app_deficit_ha": 215.7,
+  "app_relief_from_art61a_ha": 12.1,
+  "by_article": {
+    "art4_I_watercourse": 625.7,
+    "art4_II_lake": 0.0,
+    "art4_IV_spring": 83.2,
+    "art4_V_slope_gt_45deg": 0.0,
+    "art4_VIII_plateau_edge_PROXY": 0.0,
+    "art4_IX_hilltop_PROXY": 0.0,
+    "art4_XI_vereda_PROXY": 0.0
+  },
+  "total_restoration_obligation_ha": 3217.6,
+  "caveats": [
+    "Reserva Legal share is taken from the site's biome window, not from an official IBGE biome overlay of the parcel.",
+    "Art. 4 VIII / IX / XI masks are terrain and MapBiomas proxies; see forest_code.py docstrings.",
+    "Consolidation is inferred from MapBiomas 2008 land use, not from the property's CAR declaration of area consolidada.",
+    "APP counted toward RL under Art. 15 requires the owner to have requested it in CAR; assumed granted here."
+  ]
+}

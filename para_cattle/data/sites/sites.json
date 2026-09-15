@@ -1,37 +1,5 @@
 [
   {
-    "site_id": "para_paragominas",
-    "label": "Paragominas / Nordeste Paraense",
-    "biome": "Amazonia",
-    "rl_pct": 0.8,
-    "note": "Pará cattle property picked by Restoration Explorer · Pará: 2753 ha low-vigor pasture, APP deficit 467 ha, RL deficit 2948 ha (64 ha cleared after 2008).",
-    "cod_imovel": "PA-1505502-2B67B00216B54C7F82FA15ED6C7815BE",
-    "car_id": 295908,
-    "municipio": "Paragominas",
-    "mod_fiscal": 77.3034,
-    "declared_area_ha": 4244.928822986447,
-    "geom_area_ha": 4244.9,
-    "cropped_ha": 2849.8,
-    "cropped_share": 0.671,
-    "n_fields": 114,
-    "bbox_wgs84": [
-      -48.24195,
-      -3.80167,
-      -48.18209,
-      -3.73388
-    ],
-    "gpkg": "data/sites/para_paragominas.gpkg",
-    "explorer_ledger": {
-      "past24_ha": 3716.1,
-      "past_low_ha": 2752.6,
-      "app_deficit_ha": 467.4,
-      "rl_deficit_ha": 2948.0,
-      "rl_onfarm_ha": 64.4,
-      "rl_compensable_ha": 2883.6,
-      "status": "must_restore"
-    }
-  },
-  {
     "site_id": "para_sao_felix_xingu",
     "label": "São Félix do Xingu / Xingu",
     "biome": "Amazonia",
@@ -92,6 +60,102 @@
       "rl_deficit_ha": 893.5,
       "rl_onfarm_ha": 26.9,
       "rl_compensable_ha": 866.6,
+      "status": "must_restore"
+    }
+  },
+  {
+    "site_id": "para_maraba",
+    "label": "Marabá / Sudeste Paraense",
+    "biome": "Amazonia",
+    "rl_pct": 0.8,
+    "note": "Pará cattle property picked by Restoration Explorer · Pará: 1730 ha low-vigor pasture, APP deficit 215 ha, RL deficit 2949 ha (557 ha cleared after 2008).",
+    "cod_imovel": "PA-1504208-C3019D618ECE48698E8A9FBC9D5B2607",
+    "car_id": 187586,
+    "municipio": "Maraba",
+    "mod_fiscal": 82.298,
+    "declared_area_ha": 5763.986010138549,
+    "geom_area_ha": 5764.0,
+    "cropped_ha": 3248.8,
+    "cropped_share": 0.564,
+    "n_fields": 123,
+    "bbox_wgs84": [
+      -50.11527,
+      -5.50773,
+      -50.03181,
+      -5.41523
+    ],
+    "gpkg": "data/sites/para_maraba.gpkg",
+    "explorer_ledger": {
+      "past24_ha": 4098.6,
+      "past_low_ha": 1729.9,
+      "app_deficit_ha": 215.2,
+      "rl_deficit_ha": 2949.2,
+      "rl_onfarm_ha": 557.3,
+      "rl_compensable_ha": 2391.9,
+      "status": "must_restore"
+    }
+  },
+  {
+    "site_id": "para_redencao",
+    "label": "Redenção / Sul do Pará",
+    "biome": "Amazonia",
+    "rl_pct": 0.785,
+    "note": "Pará cattle property picked by Restoration Explorer · Pará: 2672 ha low-vigor pasture, APP deficit 400 ha, RL deficit 2477 ha (225 ha cleared after 2008).",
+    "cod_imovel": "PA-1506583-250434398A334BC6899A8E1ACE146CC4",
+    "car_id": 153,
+    "municipio": "Santa Maria das Barreiras",
+    "mod_fiscal": 66.8433,
+    "declared_area_ha": 5016.692675572719,
+    "geom_area_ha": 5016.7,
+    "cropped_ha": 2741.4,
+    "cropped_share": 0.546,
+    "n_fields": 72,
+    "bbox_wgs84": [
+      -50.3773,
+      -8.88913,
+      -50.29858,
+      -8.81434
+    ],
+    "gpkg": "data/sites/para_redencao.gpkg",
+    "explorer_ledger": {
+      "past24_ha": 3132.2,
+      "past_low_ha": 2671.9,
+      "app_deficit_ha": 400.2,
+      "rl_deficit_ha": 2477.0,
+      "rl_onfarm_ha": 224.6,
+      "rl_compensable_ha": 2252.4,
+      "status": "must_restore"
+    }
+  },
+  {
+    "site_id": "para_uruara",
+    "label": "Uruará / Transamazônica",
+    "biome": "Amazonia",
+    "rl_pct": 0.8,
+    "note": "Pará cattle property picked by Restoration Explorer · Pará: 692 ha low-vigor pasture, APP deficit 8 ha, RL deficit 724 ha (7 ha cleared after 2008).",
+    "cod_imovel": "PA-1501725-126ADD49CE9A4D0286957027992B3765",
+    "car_id": 379228,
+    "municipio": "Brasil Novo",
+    "mod_fiscal": 13.7586,
+    "declared_area_ha": 1031.9940581336525,
+    "geom_area_ha": 1032.0,
+    "cropped_ha": 541.7,
+    "cropped_share": 0.525,
+    "n_fields": 16,
+    "bbox_wgs84": [
+      -52.55021,
+      -3.39233,
+      -52.49018,
+      -3.3667
+    ],
+    "gpkg": "data/sites/para_uruara.gpkg",
+    "explorer_ledger": {
+      "past24_ha": 892.6,
+      "past_low_ha": 692.3,
+      "app_deficit_ha": 8.1,
+      "rl_deficit_ha": 723.9,
+      "rl_onfarm_ha": 6.7,
+      "rl_compensable_ha": 717.2,
       "status": "must_restore"
     }
   }
